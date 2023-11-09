@@ -1,0 +1,164 @@
+.logo {
+    width: 250px;
+}
+
+.carrito {
+    height: 2em;
+    width: 2em;
+    position: relative;
+    right: 50%;
+}
+
+.encabezado {
+    background-color: #ffcc00;
+}
+
+.menu {
+    font-size: 20px;
+    color: #b56d21;
+}
+
+.menu:active {
+    color: white;
+}
+
+.menu:hover {
+    color: white;
+    background-color: #e2b502
+}
+
+/* SLIDER */
+
+.sliderFondo {
+    background-color: #ffcc00;
+}
+
+/* MAIN */
+
+.fondoHavanna {
+    background-image: url(../img/back.png);
+}
+
+.fondoBlanco {
+    background-color: white;
+}
+
+.imagen-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fotosExp {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.35s;
+}
+
+.imagen-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffcc00;
+    opacity: 0;
+    transition: opacity 0.35s;
+}
+
+.imagen-container:hover::after {
+    opacity: 0.35;
+    
+}
+
+/* FOOTER */
+
+.redesSociales img{
+    height: 30px;
+}
+
+.facebook:hover {
+    opacity: 50%;
+}
+
+.instagram:hover {
+    opacity: 50%;
+}
+
+.twitter:hover {
+    opacity: 50%;
+}
+
+/* MENU */
+
+.fotosProductos {
+    opacity: 100%;
+    padding: 20px;
+}
+
+.fotosProductos:hover {
+    opacity: 100%;
+    background-color: #ffe477;
+    cursor: pointer;
+}
+
+.infoProductos h2{
+    color:#e2b502;
+}
+.infoProductos h4{
+    color:grey;
+}
+
+.botonInfo {
+    background-color:#e2b502;
+    color: white;
+}
+
+.botonInfo:hover {
+    background-color:#e2b502;
+    color: black;
+}
+
+/* SUCURSALES */
+
+.comoLlegar {
+    background-color: #e2b502;
+    border: 4px solid black;
+}
+
+.comoLlegar:hover {
+    background-color:#4e4c46;
+    color: white;
+}
+
+.fondoSucursales {
+    background-color: #e2b502;
+}
+
+/* NOSOTROS */
+
+.parrafosNosotros h4 {
+    margin-left: 25px;
+    color: #868484;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.parrafosNosotros p {
+    margin-left: 25px;
+    font-weight: 500;
+    color: #948d88;
+}
+
+.input {
+    height: 40px;
+    background-color: #dbdada;
+    margin: 0 auto;
+}
+
+.label {
+    font-size: 20px;
+    color: #afb1b6;
+}
+

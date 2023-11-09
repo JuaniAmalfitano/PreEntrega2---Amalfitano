@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havanna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+
+<body class="container-fluid fondoHavanna">
+
+
+    <nav class="navbar navbar-expand-lg encabezado sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto menuNav">
+                    <li class="nav-item">
+                        <a class="nav-link menu" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu" href="">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="../html/sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="../html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="../html/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid sliderFondo pb-5 ">
+
+        <div class="carousel-inner container">
+            <div>
+                <img src="../img/header-productos.png" class="d-block w-100" alt="Foto de un producto">
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="container-fluid">
+
+        <div class="fondoBlanco container pt-2 pb-2">
+            <h1 class="text-left mt-5 text-warning fw-bold">PROCUCTOS</h1>
+            <h2 class="text-left mt-2 text-warning fw-light">Categorias</h2>
+        </div>
+
+        <div class="row container mx-auto p-2 fondoBlanco">
+            <div class="col-xl-3 col-md-4 col-sm-12">
+                <img class="fotosProductos" src="../img/productos/alfajores.png" alt="foto de alfajor">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#alfajores">
+                    Informacion del producto
+                </button>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-12">
+                <img class="fotosProductos" src="../img/productos/havannets.png" alt="">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#havannets">
+                    Informacion del producto
+                </button>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-12">
+                <img class="fotosProductos" src="../img/productos/linea-mini.png" alt="">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#mini">
+                    Informacion del producto
+                </button>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-12">
+                <img class="fotosProductos" src="../img/productos/galletitas.png" alt="">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#galletitas">
+                    Informacion del producto
+                </button>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+                <img class="fotosProductos" src="../img/productos/ddl.png" alt="">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#ddl">
+                    Informacion del producto
+                </button>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-12">
+                <img class="fotosProductos" src="../img/productos/chocolates.png" alt="">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#chocolates">
+                    Informacion del producto
+                </button>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-12">
+                <img class="fotosProductos" src="../img/productos/haireados.png" alt="">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#haireados">
+                    Informacion del producto
+                </button>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-12">
+
+                <img class="fotosProductos" src="../img/productos/barritas.png" alt="">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#barritas">
+                    Informacion del producto
+                </button>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-sm-12">
+                <img class="fotosProductos" src="../img/productos/cafeteria.png" alt="">
+                <button type="button" class="btn botonInfo" data-bs-toggle="modal" data-bs-target="#cafeteria">
+                    Informacion del producto
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- MODAL -->
+
+    <!-- --------------------------------------ALFAJORES-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="alfajores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/alfajores informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>Alfajores rellenos con dulce de leche cubiertos con chocolate blanco y con cobertura de
+                        chocolate semiamargo.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------HAVANNETS-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="havannets" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/havannets informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>Delicados bocaditos de Dulce de Leche, cubiertos con el más suave chocolate semiamargo y con el
+                        más fino chocolate blanco.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------LINEA MINI-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="mini" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/linea mini informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>Alfajor de Chocolate Negro + Chocolate Blanco.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------GALLETITAS-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="galletitas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/galletitas informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>Tentadoras galletitas horneadas rellenas con la más suave crema sabor a limón, cubiertas de
+                        chocolate semi amargo.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------DULCE DE LECHE-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="ddl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/ddl informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>Dulce de leche 800g.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------CHOCOLATES-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="chocolates" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/chocolate informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>La mejor selección de bombones de chocolate surtidos en una exclusiva presentación.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------HAIREADOS-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="haireados" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/haireados informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>Sándwich de tapas aireadas de trigo relleno de fiambre de lomito ahumado, quesos danbo y
+                        cheddar.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------BARRITAS-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="barritas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/barritas informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>CHOCOLATE 70% CACAO PURO</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------CAFETERIA-------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="cafeteria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion del producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center infoProductos">
+                    <img src="../img/productos/cafeteria informacion.png" alt="">
+                    <h2>Caracteristicas</h2>
+                    <h4>Tenemos 5 Frappés Havanna, refrescantes y con toppings únicos: "CHOCOLATE", "DULCE DE LECHE",
+                        "TRAMONTANA", "FRUTOS ROJOS" Y" DURAZNO Y NARAJA"</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-center container footer">
+
+        <div class="fotoFooter">
+            <img class="img-fluid" src="../img/footer.png" alt="">
+        </div>
+
+        <div class="row mb-3">
+            <h5>SECCIONES</h5>
+            <ul class="nav flex-row justify-content-center gap-3">
+                <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-secondary">Inicio</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Menu</a>
+                </li>
+                <li class="nav-item mb-2"><a href="./sucursales.html"
+                        class="nav-link p-0 text-body-secondary">Sucursales</a></li>
+                <li class="nav-item mb-2"><a href="./nosotros.html"
+                        class="nav-link p-0 text-body-secondary">Nosotros</a></li>
+                <li class="nav-item mb-2"><a href="./contacto.html"
+                        class="nav-link p-0 text-body-secondary">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="redesSociales">
+            <a href="https://www.facebook.com/havannaargentina" target="_blank"><img class="img-fluid facebook"
+                    src="../img/face.png" alt="icono de Facebook"></a>
+            <a href="https://www.instagram.com/havannaarg/" target="_blank"><img class="img-fluid instagram"
+                    src="../img/instagram (1).png" alt="icono de Instagram"></a>
+            <a href="https://twitter.com/Havanna_arg" target="_blank"><img class="img-fluid twitter"
+                    src="../img/twitter.png" alt="icono de Twitter"></a>
+        </div>
+
+        <div class="text-center p-3">
+            ©HAVANNA - 2023 - TODOS LOS DERECHOS RESERVADOS
+            <a href="https://Havanna.com.ar/">havanna.com.ar</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
