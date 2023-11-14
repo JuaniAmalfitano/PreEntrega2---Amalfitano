@@ -71,6 +71,24 @@
     
 }
 
+.fondoGris {
+    background-color: #f4f4f4;
+}
+
+.btnSuscribite {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.btnSuscribite:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+
+.inputNewsletter {
+    width: 60%;
+}
+
 /* FOOTER */
 
 .redesSociales img{
