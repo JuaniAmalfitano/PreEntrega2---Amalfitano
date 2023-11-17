@@ -7,13 +7,6 @@
     width: 250px;
 }
 
-.carrito {
-    height: 2em;
-    width: 2em;
-    position: relative;
-    right: 50%;
-}
-
 .encabezado {
     background-color: #ffcc00;
 }
