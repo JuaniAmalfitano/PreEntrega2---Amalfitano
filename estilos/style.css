@@ -25,6 +25,20 @@
     background-color: #e2b502
 }
 
+.menuFooter:visited {
+    font-size: 16px;
+    color: #6d655f;
+}
+
+.menuFooter {
+    font-size: 16px;
+    color: #6d655f;
+}
+
+.menuFooter:hover {
+    color: black;
+}
+
 a {
     font-family: 'Intro Bold Italic', sans-serif;
     font-size: 13px;
@@ -99,7 +113,7 @@ a {
 }
 
 .fondoGris {
-    background-color: #f4f4f4;
+    background-color: #cac9c9;
 }
 
 .btnSuscribite {
@@ -110,6 +124,11 @@ a {
 .btnSuscribite:hover {
     background-color: #ffcc00;
     color: white;
+}
+
+.suscripcionTexto {
+    color: #ffcc00;
+    font-size: 20px;
 }
 
 .inputNewsletter {
@@ -249,4 +268,80 @@ a {
 
 .infoReclamos h4 {
     color: #e2b502;
+}
+
+/* PAGINA DEL ALFAJOR */
+
+.tamContainerAlfajor {
+    height: 100%;
+    width: 100%;
+}
+
+.check {
+    height: 15px;
+    width: 15px;
+
+}
+
+.btnCarrito {
+    background-color: #ffcc00;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.btnCarrito:hover {
+    background-color:#ffcc00;
+    color: white;
+}
+
+.tituloTabs {
+    color: grey;
+}
+
+.tituloTabs:active {
+    color: black;
+}
+
+/* ALFAJORES */
+
+.fotoConTextoAlfajores {
+    background-image: url(../img/alfajores/alfajores.png);
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1Titulo {
+    font-size: 3.5rem;
+}
+
+.fotosTienda {
+    height: 300px;
+}
+
+.fotosProductosRelacionados {
+    height: 150px;
+}
+
+/* MERCHANDISING */
+
+.fotoConTextoMerch {
+    background-image: url(../img/Merchandising/Merchandising.jpg);
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoConTextoTienda {
+    background-image: url(../img/tienda/headersInternasSinIconos.png);
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

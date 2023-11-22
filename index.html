@@ -12,13 +12,14 @@
 
     <link rel="stylesheet" href="estilos/style.css">
 
+    <link rel="icon" type="image/jpg" href="./img/icon favicon.png" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
-<link rel="icon" type="image/jpg" href="./img/footer-mobile.png"/>
-
-<body class="container-fluid fondoHavanna">
-
+<body class="fondoHavanna">
 
     <nav class="navbar navbar-expand-lg encabezado sticky-top">
         <div class="container">
@@ -34,6 +35,17 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menu" href="./html/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link menu dropdown-toggle" href="#" id="tiendaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tienda
+                        </a>
+                        <!-- El contenido del dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="tiendaDropdown">
+                            <a class="dropdown-item menuFooter" href="./html/alfajores.html">Alfajores</a>
+                            <a class="dropdown-item menuFooter" href="./html/merchandising.html">Merchandising</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menu" href="./html/sucursales.html">Sucursales</a>
@@ -62,13 +74,16 @@
 
         <div class="carousel-inner container">
             <div class="carousel-item active">
-                <img src="img/slide1.jpg" class="d-block w-100" alt="primer foto del slide">
+                <a href="./html/alfajores.html"><img src="img/slide1.jpg" class="d-block w-100"
+                        alt="primer foto del slide"></a>
             </div>
             <div class="carousel-item">
-                <img src="img/slide2.png" class="d-block w-100" alt="segunda foto del slide">
+                <a href="./html/alfajorSDDL.html"><img src="img/slide2.png" class="d-block w-100"
+                        alt="segunda foto del slide"></a>
             </div>
             <div class="carousel-item">
-                <img src="img/slide3.png" class="d-block w-100" alt="tercera foto del slide">
+                <a href="./html/alfajorVEGANO.html"><img src="img/slide3.png" class="d-block w-100"
+                        alt="tercera foto del slide"></a>
             </div>
         </div>
 
@@ -94,26 +109,27 @@
 
         <div class="row container mx-auto fondoBlanco pt-5 pb-5">
             <div class="col-xl-3 col-md-6 col-sm-12">
-                <div class="imagen-container">
-                    <img class="fotosExp" src="img/experiencia1.jpg" alt="foto de Havanna Empresa">
+                <div class="imagen-container divExperiencias">
+                    <img data-aos="zoom-in" class="fotosExp" src="img/experiencia1.jpg" alt="foto de Havanna Empresa">
                 </div>
             </div>
 
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="imagen-container">
-                    <img class="fotosExp" src="img/experiencia2.jpg" alt="foto de Havanna Productos">
+                    <img data-aos="zoom-in" class="fotosExp" src="img/experiencia2.jpg" alt="foto de Havanna Productos">
                 </div>
             </div>
 
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="imagen-container">
-                    <img class="fotosExp" src="img/experiencia3.jpg" alt="foto de Havanna Trabaja Con Nosotros">
+                    <img data-aos="zoom-in" class="fotosExp" src="img/experiencia3.jpg"
+                        alt="foto de Havanna Trabaja Con Nosotros">
                 </div>
             </div>
 
             <div class="col-xl-3 col-md-6 col-sm-12">
                 <div class="imagen-container">
-                    <img class="fotosExp" src="img/experiencia4.jpg" alt="foto de Havanna Locales">
+                    <img data-aos="zoom-in" class="fotosExp" src="img/experiencia4.jpg" alt="foto de Havanna Locales">
                 </div>
             </div>
         </div>
@@ -126,11 +142,37 @@
                     </div>
                     <div class="col-lg-6">
                         <form class="input-group">
-                            <input type="text" class="form-control" placeholder="Ingresa tu email" aria-label="Email" aria-describedby="button-addon2">
+                            <input type="text" class="form-control" placeholder="Ingresa tu email" aria-label="Email"
+                                aria-describedby="button-addon2">
                             <div class="input-group-append">
-                                <button class="btn btnSuscribite ms-3" type="button" id="button-addon2">Suscríbete</button>
+                                <button type="button" class="btn btnSuscribite ms-3" data-bs-toggle="modal"
+                                    data-bs-target="#suscripcion">
+                                    Suscríbete
+                                </button>
                             </div>
+
+
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <!-- SUSCIRIBETE -->
+        <div class="modal fade" id="suscripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Suscripciones</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h3 class="suscripcionTexto">Muchas gracias por suscribirte a nuestro Newsletter. Te iremos
+                            mandando todas las noticias y promociones al mail indicado</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
@@ -147,15 +189,15 @@
         <div class="row mb-3">
             <h5>SECCIONES</h5>
             <ul class="nav flex-row justify-content-center gap-3">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-                <li class="nav-item mb-2"><a href="./html/menu.html" class="nav-link p-0 text-body-secondary">Menu</a>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 menuFooter">Inicio</a></li>
+                <li class="nav-item mb-2 menuFooter"><a href="./html/menu.html" class="nav-link p-0 menuFooter">Menu</a>
                 </li>
                 <li class="nav-item mb-2"><a href="./html/sucursales.html"
-                        class="nav-link p-0 text-body-secondary">Sucursales</a></li>
-                <li class="nav-item mb-2"><a href="./html/nosotros.html"
-                        class="nav-link p-0 text-body-secondary">Nosotros</a></li>
-                <li class="nav-item mb-2"><a href="./html/contacto.html"
-                        class="nav-link p-0 text-body-secondary">Contacto</a></li>
+                        class="nav-link p-0 menuFooter">Sucursales</a></li>
+                <li class="nav-item mb-2"><a href="./html/nosotros.html" class="nav-link p-0 menuFooter">Nosotros</a>
+                </li>
+                <li class="nav-item mb-2"><a href="./html/contacto.html" class="nav-link p-0 menuFooter">Contacto</a>
+                </li>
             </ul>
         </div>
 
@@ -179,10 +221,16 @@
             target="_blank"><img class="botonWpp" src="img/logoWPP.png" alt="boton de whatsapp"></a>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
