@@ -30,6 +30,10 @@
     color: #6d655f;
 }
 
+.menuFooter:active {
+    color: black;
+}
+
 .menuFooter {
     font-size: 16px;
     color: #6d655f;
@@ -38,6 +42,8 @@
 .menuFooter:hover {
     color: black;
 }
+
+
 
 a {
     font-family: 'Intro Bold Italic', sans-serif;
@@ -303,20 +309,38 @@ a {
     color: black;
 }
 
+/* TIENDA GENERAL */
+
+.stickyOfertas {
+    font-size: 20PX;
+}
+
 /* ALFAJORES */
 
 .fotoConTextoAlfajores {
     background-image: url(../img/alfajores/alfajores.png);
+    background-repeat: no-repeat;
     color: white;
     height: 250px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .h1Titulo {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    text-decoration:underline;
+    filter: brightness(100%);
 }
+
+@media (max-width: 991px) {
+    .h1Titulo {
+        font-size: 2.5rem;
+    }
+}
+
+
 
 .fotosTienda {
     height: 300px;
@@ -330,6 +354,8 @@ a {
 
 .fotoConTextoMerch {
     background-image: url(../img/Merchandising/Merchandising.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     height: 250px;
     display: flex;
@@ -339,9 +365,16 @@ a {
 
 .fotoConTextoTienda {
     background-image: url(../img/tienda/headersInternasSinIconos.png);
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.descuento {
+    color: grey;
+    font-size: 20px;
 }

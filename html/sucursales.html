@@ -12,11 +12,11 @@
 
     <link rel="stylesheet" href="../estilos/style.css">
 
-    <link rel="icon" type="image/jpg" href="../img/icon favicon.png"/>
-    
+    <link rel="icon" type="image/jpg" href="../img/icon favicon.png" />
+
 </head>
 
-<body class="container-fluid fondoHavanna">
+<body class="fondoHavanna">
 
 
     <nav class="navbar navbar-expand-lg encabezado sticky-top">
@@ -34,6 +34,20 @@
                     <li class="nav-item">
                         <a class="nav-link menu" href="../html/menu.html">Menu</a>
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link menu dropdown-toggle" href="#" id="tiendaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tienda
+                        </a>
+                        <!-- El contenido del dropdown -->
+                        <div class="dropdown-menu" aria-labelledby="tiendaDropdown">
+                            <a class="dropdown-item menuFooter" href="../html/alfajores.html">Alfajores</a>
+                            <a class="dropdown-item menuFooter" href="../html/merchandising.html">Merchandising</a>
+                            <a class="dropdown-item menuFooter" href="../html/tienda.html">Todos los productos</a>
+                        </div>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link active menu" href="#">Sucursales</a>
                     </li>
@@ -121,11 +135,21 @@
                 <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 menuFooter">Inicio</a>
                 </li>
                 <li class="nav-item mb-2"><a href="./menu.html" class="nav-link p-0 menuFooter">Menu</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link menuFooter dropdown-toggle p-0" href="#" id="tiendaDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tienda
+                    </a>
+                    <!-- El contenido del dropdown -->
+                    <div class="dropdown-menu" aria-labelledby="tiendaDropdown">
+                        <a class="dropdown-item menuFooter" href="../html/alfajores.html">Alfajores</a>
+                        <a class="dropdown-item menuFooter" href="../html/merchandising.html">Merchandising</a>
+                        <a class="dropdown-item menuFooter" href="../html/tienda.html">Todos los productos</a>
+                    </div>
+                </li>
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 menuFooter">Sucursales</a></li>
-                <li class="nav-item mb-2"><a href="./nosotros.html"
-                        class="nav-link p-0 menuFooter">Nosotros</a></li>
-                <li class="nav-item mb-2"><a href="./contacto.html"
-                        class="nav-link p-0 menuFooter">Contacto</a></li>
+                <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 menuFooter">Nosotros</a></li>
+                <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 menuFooter">Contacto</a></li>
             </ul>
         </div>
 
