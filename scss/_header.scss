@@ -1,0 +1,43 @@
+/*-------- HEADER --------*/
+
+.logo {
+    width: 250px;
+  }
+  
+  .encabezado {
+    background-color: #ffcc00;
+  }
+  
+  .menu {
+    font-size: 20px;
+    color: #b56d21;
+  
+    &:active {
+      color: $color-blanco;
+    }
+  
+    &:hover {
+      color: $color-blanco;
+      background-color: #e2b502;
+    }
+  }
+  
+  .menuFooter {
+    &:visited {
+      font-size: 16px;
+      color: #6d655f;
+    }
+  
+    &:active, &:hover {
+      color: black;
+    }
+  
+    font-size: 16px;
+    color: #6d655f;
+  }
+  
+  a {
+    font-family: 'Intro Bold Italic', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+  }

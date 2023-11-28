@@ -1,0 +1,93 @@
+.imagen-container {
+    position: relative;
+    overflow: hidden;
+}
+  
+  .fotosExp {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.35s;
+}
+  
+  .imagen-container {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffcc00;
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+  
+    &:hover::after {
+      opacity: 0.35;
+    }
+}
+
+.fotosProductos {
+    opacity: 100%;
+    padding: 20px;
+  
+    &:hover {
+      opacity: 50%;
+      padding: 20px;
+    }
+}
+
+.fotoConTextoAlfajores {
+    background-image: url(../img/alfajores/alfajores.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-blanco;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fotosTienda {
+    height: 300px;
+  }
+  
+  .fotosProductosRelacionados {
+    height: 150px;
+  }
+  
+  /* MERCHANDISING */
+  
+  .fotoConTextoMerch {
+    background-image: url(../img/Merchandising/Merchandising.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-blanco;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fotoConTextoTienda {
+    background-image: url(../img/tienda/headersInternasSinIconos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-blanco;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.check {
+    height: 15px;
+    width: 15px;
+
+}
+
+.tamContainerAlfajor {
+    height: 100%;
+    width: 100%;
+}

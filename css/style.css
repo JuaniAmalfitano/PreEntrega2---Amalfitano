@@ -1,0 +1,331 @@
+/*-------- RESET --------*/
+@import url("https://fonts.cdnfonts.com/css/intro-black");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-------- HEADER --------*/
+.logo {
+  width: 250px;
+}
+
+.encabezado {
+  background-color: #ffcc00;
+}
+
+.menu {
+  font-size: 20px;
+  color: #b56d21;
+}
+.menu:active {
+  color: white;
+}
+.menu:hover {
+  color: white;
+  background-color: #e2b502;
+}
+
+.menuFooter {
+  font-size: 16px;
+  color: #6d655f;
+}
+.menuFooter:visited {
+  font-size: 16px;
+  color: #6d655f;
+}
+.menuFooter:active, .menuFooter:hover {
+  color: black;
+}
+
+a {
+  font-family: "Intro Bold Italic", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.imagen-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.fotosExp {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.35s;
+}
+
+.imagen-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffcc00;
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+.imagen-container:hover::after {
+  opacity: 0.35;
+}
+
+.fotosProductos {
+  opacity: 100%;
+  padding: 20px;
+}
+.fotosProductos:hover {
+  opacity: 50%;
+  padding: 20px;
+}
+
+.fotoConTextoAlfajores {
+  background-image: url(../img/alfajores/alfajores.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotosTienda {
+  height: 300px;
+}
+
+.fotosProductosRelacionados {
+  height: 150px;
+}
+
+/* MERCHANDISING */
+.fotoConTextoMerch {
+  background-image: url(../img/Merchandising/Merchandising.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotoConTextoTienda {
+  background-image: url(../img/tienda/headersInternasSinIconos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  height: 15px;
+  width: 15px;
+}
+
+.tamContainerAlfajor {
+  height: 100%;
+  width: 100%;
+}
+
+/*-------- FONDOS --------*/
+.sliderFondo {
+  background-color: #ffcc00;
+}
+
+.fondoHavanna {
+  background-image: url(../img/back.png);
+}
+
+.fondoBlanco {
+  background-color: white;
+}
+
+.fondoGris {
+  background-color: #cac9c9;
+}
+
+.fondoSucursales {
+  background-color: #e2b502;
+}
+
+/*-------- TEXTOS --------*/
+.titulos {
+  font-family: "Intro Black", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffcc00;
+}
+
+.subtitulos {
+  font-family: "Intro-Light", sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  color: #ffcc00;
+}
+
+.subtitulosNegros {
+  font-family: "Intro-Light", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.suscripcionTexto {
+  color: #ffcc00;
+  font-size: 20px;
+}
+
+.inputNewsletter {
+  width: 60%;
+}
+
+.infoProductos h2 {
+  color: #e2b502;
+}
+
+.infoProductos h4 {
+  color: grey;
+}
+
+/* NOSOTROS */
+.textoNosotros h4 {
+  margin-left: 25px;
+  color: #868484;
+  font-weight: 700;
+  font-size: 20px;
+}
+.textoNosotros p {
+  margin-left: 25px;
+  font-weight: 500;
+  color: #948d88;
+}
+
+.infoReclamos h3 {
+  color: black;
+}
+.infoReclamos h4 {
+  color: #e2b502;
+}
+
+.tituloTabs {
+  color: grey;
+}
+.tituloTabs:active {
+  color: black;
+}
+
+.h1Titulo {
+  font-size: 4rem;
+  text-decoration: underline;
+  filter: brightness(100%);
+}
+
+.descuento {
+  color: grey;
+  font-size: 20px;
+}
+
+.stickyOfertas {
+  font-size: 20PX;
+}
+
+.btnSuscribite {
+  background-color: #ffcc00;
+  color: black;
+}
+.btnSuscribite:hover {
+  background-color: #ffcc00;
+  color: white;
+}
+
+.botonInfo {
+  font-family: "Intro Book Italic", sans-serif;
+  background-color: #e2b502;
+  color: white;
+}
+.botonInfo:hover {
+  background-color: #e2b502;
+  color: black;
+}
+
+.botonWpp {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  opacity: 100%;
+}
+.botonWpp:hover {
+  opacity: 50%;
+}
+
+.btnEnviar {
+  background-color: #aeaeae;
+  color: white;
+  font-size: 25px;
+}
+.btnEnviar:hover {
+  background-color: #8b8585;
+}
+
+.btnCarrito {
+  background-color: #ffcc00;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.btnCarrito:hover {
+  background-color: #ffcc00;
+  color: white;
+}
+
+/* CONTACTO */
+.input {
+  height: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.label {
+  width: 100%;
+  font-size: 20px;
+  color: #c9c9ca;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textArea {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  width: 100%;
+  height: 100px;
+}
+
+/*-------- FOOTER --------*/
+.redesSociales img {
+  height: 30px;
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover {
+  opacity: 50%;
+}
+
+@media (max-width: 991px) {
+  .h1Titulo {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .stickyOfertas {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

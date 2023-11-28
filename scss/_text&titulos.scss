@@ -1,0 +1,89 @@
+/*-------- TEXTOS --------*/
+
+.titulos {
+    font-family: 'Intro Black', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffcc00;
+  }
+  
+.subtitulos {
+    font-family: 'Intro-Light', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #ffcc00;
+  }
+  
+.subtitulosNegros {
+    font-family: 'Intro-Light', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+  }
+
+.suscripcionTexto {
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+.inputNewsletter {
+    width: 60%;
+}  
+
+.infoProductos h2 {
+    color: #e2b502;
+}
+
+.infoProductos h4 {
+    color: grey;
+}
+
+/* NOSOTROS */
+.textoNosotros {
+    h4 {
+      margin-left: 25px;
+      color: #868484;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  
+    p {
+      margin-left: 25px;
+      font-weight: 500;
+      color: #948d88;
+    }
+}
+
+.infoReclamos {
+    h3 {
+      color: black;
+    }
+  
+    h4 {
+      color: #e2b502;
+    }
+}  
+
+.tituloTabs {
+    color: grey;
+  
+    &:active {
+      color: black;
+    }
+}
+
+
+.h1Titulo {
+    font-size: 4rem;
+    text-decoration:underline;
+    filter: brightness(100%);
+}
+
+.descuento {
+    color: grey;
+    font-size: 20px;
+}
+
+.stickyOfertas {
+    font-size: 20PX;
+}
