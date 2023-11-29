@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* MIXIN */
 /*-------- RESET --------*/
 @import url("https://fonts.cdnfonts.com/css/intro-black");
 * {
@@ -24,18 +27,6 @@
 .menu:hover {
   color: white;
   background-color: #e2b502;
-}
-
-.menuFooter {
-  font-size: 16px;
-  color: #6d655f;
-}
-.menuFooter:visited {
-  font-size: 16px;
-  color: #6d655f;
-}
-.menuFooter:active, .menuFooter:hover {
-  color: black;
 }
 
 a {
@@ -70,6 +61,11 @@ a {
   opacity: 0.35;
 }
 
+.integrantes {
+  width: 390px;
+  height: 500px;
+}
+
 .fotosProductos {
   opacity: 100%;
   padding: 20px;
@@ -77,18 +73,6 @@ a {
 .fotosProductos:hover {
   opacity: 50%;
   padding: 20px;
-}
-
-.fotoConTextoAlfajores {
-  background-image: url(../img/alfajores/alfajores.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  height: 250px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .fotosTienda {
@@ -99,24 +83,37 @@ a {
   height: 150px;
 }
 
-/* MERCHANDISING */
-.fotoConTextoMerch {
-  background-image: url(../img/Merchandising/Merchandising.jpg);
+.fotoConTextoAlfajores {
+  background-image: url(../img/tienda/alfajores.png);
   background-repeat: no-repeat;
   background-position: center;
   color: white;
   height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotoConTextoMerch {
+  background-image: url(../img/tienda/Merchandising.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 250px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .fotoConTextoTienda {
-  background-image: url(../img/tienda/headersInternasSinIconos.png);
+  background-image: url(../img/tienda/tienda.png);
   background-repeat: no-repeat;
   background-position: center;
   color: white;
   height: 250px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,6 +231,18 @@ a {
   font-size: 20PX;
 }
 
+.tamañoTitulo {
+  min-height: 55px;
+}
+
+.carrito {
+  height: 30px;
+  width: 30px;
+}
+.carrito:hover {
+  background-color: rgb(176, 195, 250);
+}
+
 .btnSuscribite {
   background-color: #ffcc00;
   color: black;
@@ -315,6 +324,18 @@ a {
 
 .facebook:hover, .instagram:hover, .twitter:hover {
   opacity: 50%;
+}
+
+.menuFooter {
+  font-size: 1.2rem;
+  color: #6d655f;
+}
+.menuFooter:visited {
+  font-size: 1.2rem;
+  color: #6d655f;
+}
+.menuFooter:active, .menuFooter:hover {
+  color: black;
 }
 
 @media (max-width: 991px) {

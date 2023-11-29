@@ -5,7 +5,7 @@
   }
   
   .encabezado {
-    background-color: #ffcc00;
+    background-color: $color-amarillo-principal;
   }
   
   .menu {
@@ -20,20 +20,6 @@
       color: $color-blanco;
       background-color: #e2b502;
     }
-  }
-  
-  .menuFooter {
-    &:visited {
-      font-size: 16px;
-      color: #6d655f;
-    }
-  
-    &:active, &:hover {
-      color: black;
-    }
-  
-    font-size: 16px;
-    color: #6d655f;
   }
   
   a {

@@ -1,9 +1,18 @@
+.carrito {
+  height: 30px;
+  width: 30px;
+
+  &:hover {
+    background-color: rgb(176, 195, 250);
+  }
+}
+
 .btnSuscribite {
-    background-color: #ffcc00;
+    background-color: $color-amarillo-principal;
     color: black;
   
     &:hover {
-      background-color: #ffcc00;
+      background-color: $color-amarillo-principal;
       color: $color-blanco;
     }
 }
@@ -43,13 +52,13 @@
 }
 
 .btnCarrito {
-    background-color: #ffcc00;
+    background-color: $color-amarillo-principal;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
   
     &:hover {
-      background-color: #ffcc00;
+      background-color: $color-amarillo-principal;
       color: $color-blanco;
     }
 }

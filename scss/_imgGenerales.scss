@@ -17,7 +17,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #ffcc00;
+      background-color: $color-amarillo-principal;
       opacity: 0;
       transition: opacity 0.35s;
     }
@@ -25,6 +25,11 @@
     &:hover::after {
       opacity: 0.35;
     }
+}
+
+.integrantes {
+  width: 390px;
+  height: 500px;
 }
 
 .fotosProductos {
@@ -36,18 +41,6 @@
       padding: 20px;
     }
 }
-
-.fotoConTextoAlfajores {
-    background-image: url(../img/alfajores/alfajores.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    color: $color-blanco;
-    height: 250px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
   .fotosTienda {
     height: 300px;
@@ -56,29 +49,20 @@
   .fotosProductosRelacionados {
     height: 150px;
   }
-  
-  /* MERCHANDISING */
+
+  .fotoConTextoAlfajores {
+    background-image: url(../img/tienda/alfajores.png);
+    @include fotosCategoriasTienda;
+  }
   
   .fotoConTextoMerch {
-    background-image: url(../img/Merchandising/Merchandising.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    color: $color-blanco;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(../img/tienda/Merchandising.jpg);
+    @include fotosCategoriasTienda;
   }
   
   .fotoConTextoTienda {
-    background-image: url(../img/tienda/headersInternasSinIconos.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    color: $color-blanco;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(../img/tienda/tienda.png);
+    @include fotosCategoriasTienda;
   }
 
 .check {

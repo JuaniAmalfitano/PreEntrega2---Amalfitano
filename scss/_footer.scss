@@ -7,3 +7,17 @@
   .facebook:hover, .instagram:hover, .twitter:hover {
     opacity: 50%;
   }
+
+.menuFooter {
+    &:visited {
+      font-size: 1.2rem;
+      color: #6d655f;
+    }
+  
+    &:active, &:hover {
+      color: black;
+    }
+  
+    font-size: 1.2rem;
+    color: #6d655f;
+}

@@ -1,0 +1,12 @@
+/* MIXIN */
+
+@mixin fotosCategoriasTienda {
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-blanco;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
