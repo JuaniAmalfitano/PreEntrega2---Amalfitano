@@ -1,3 +1,5 @@
+/*BOTONES*/
+
 .carrito {
   height: 30px;
   width: 30px;
@@ -42,13 +44,15 @@
 }
 
 .btnEnviar {
-    background-color: #aeaeae;
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: #aeaeae;
+  color: $color-blanco;
+
+  &:hover {
+    background-color: $color-amarillo-principal;
     color: $color-blanco;
-    font-size: 25px;
-  
-    &:hover {
-      background-color: #8b8585;
-    }
+  }
 }
 
 .btnCarrito {
